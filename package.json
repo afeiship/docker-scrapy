@@ -1,0 +1,13 @@
+{
+  "name": "docker-scrapy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Docker for scrapy.",
+  "homepage": "https://js.work",
+  "author": {
+    "name": "afeiship",
+    "email": "1290657123@qq.com"
+  },
+  "license": "MIT",
+  "generator": "@jswork/generator-github"
+}
