@@ -1,5 +1,5 @@
 # docker for scrapy
-FROM python:3.10-alpine3.15
+FROM python:3.10-alpine
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
 # add poetry
