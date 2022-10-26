@@ -18,8 +18,8 @@ RUN pip install poetry
 
 # add app
 WORKDIR /app
-COPY entrypoint.sh .
 
-RUN ls -alh
-
-CMD ["./entrypoint.sh"]
+# entrypoint
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
