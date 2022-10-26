@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-cd /app
+cd /app && ls -alh
 
-ls -alh
+poetry install
 
 # active the virtual environment
 source $(poetry env info --path)/bin/activate
