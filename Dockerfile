@@ -3,7 +3,7 @@ FROM python:3.10-alpine
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
 RUN apk update && apk upgrade
-RUN apk add --no-cache bash\
+RUN apk add --no-cache bash \
                        pkgconfig \
                        git \
                        gcc \
