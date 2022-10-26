@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+cd /app
+
 # active the virtual environment
 source $(poetry env info --path)/bin/activate
 
