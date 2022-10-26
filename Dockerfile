@@ -20,4 +20,6 @@ RUN pip install poetry
 WORKDIR /app
 COPY entrypoint.sh .
 
-ENTRYPOINT ["./entrypoint.sh"]
+RUN ls -alh
+
+CMD ["./entrypoint.sh"]
