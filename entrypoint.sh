@@ -2,6 +2,8 @@
 
 cd /app
 
+ls -alh
+
 # active the virtual environment
 source $(poetry env info --path)/bin/activate
 
