@@ -4,7 +4,6 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
 RUN apk update && apk upgrade
 RUN apk add --no-cache bash\
-                       python \
                        pkgconfig \
                        git \
                        gcc \
