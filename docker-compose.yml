@@ -1,0 +1,7 @@
+version: "3"
+services:
+  app:
+    image: "scrapy:v1"
+    container_name: "scrapy"
+    volumes:
+      - ./scrapy:/app
