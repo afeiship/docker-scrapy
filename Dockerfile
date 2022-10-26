@@ -22,4 +22,4 @@ COPY . /app
 
 RUN cd /app && poetry install
 
-CMD ["./entrypoint.sh"]
+ENTRYPOINT ["./app/entrypoint.sh"]
