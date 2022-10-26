@@ -18,6 +18,6 @@ RUN pip install poetry
 
 # add app
 WORKDIR /app
-COPY . /app
+COPY entrypoint.sh .
 
 ENTRYPOINT ["./app/entrypoint.sh"]
