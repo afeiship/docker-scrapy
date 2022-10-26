@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "docker-scrapy"
+version = "0.1.0"
+description = "Docker for scrapy."
+authors = ["afeiship <1290657123@qq.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "docker_scrapy"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

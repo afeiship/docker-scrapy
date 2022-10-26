@@ -1,15 +1,14 @@
 # docker for scrapy
 FROM python:3.10-alpine3.15
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
 # add poetry
 RUN pip install poetry
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 
+# add app
 WORKDIR /app
-
-# copy app
-COPY poetry.lock pyproject.toml /app/
 COPY . /app
 
-RUN poetry install
+RUN cd /app && poetry install
 
+CMD ["./entrypoint.sh"]
