@@ -3,7 +3,7 @@ import time
 
 urls = [
     f'https://www.cnblogs.com/#p{page}'
-    for page in range(1, 10001)
+    for page in range(1, 1001)
 ]
 
 if __name__ == '__main__':
