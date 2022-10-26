@@ -20,6 +20,6 @@ RUN pip install poetry
 WORKDIR /app
 COPY . /app
 
-RUN cd /app && poetry install && ls -alh
+RUN cd /app && ls -alh
 # run
 CMD ["poetry", "run", "python", "app.py"]
