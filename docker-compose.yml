@@ -4,4 +4,4 @@ services:
     image: "scrapy:v1"
     container_name: "scrapy"
     volumes:
-      - ./app:/app
+      - .:/app
