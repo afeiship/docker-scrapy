@@ -8,4 +8,4 @@ urls = [
 if __name__ == '__main__':
     for url in urls:
         response = requests.get(url)
-        print(response.status_code)
+        print(url, response.status_code)
