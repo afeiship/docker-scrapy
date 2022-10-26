@@ -9,6 +9,9 @@ RUN apk add --no-cache bash\
                        gcc \
                        openldap \
                        libcurl \
+                       python2-dev \
+                       gpgme-dev \
+                       libc-dev \
     && rm -rf /var/cache/apk/*
 
 # add poetry
