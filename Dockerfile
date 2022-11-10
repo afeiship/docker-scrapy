@@ -1,20 +1,10 @@
 # docker for scrapy
-FROM python:3.10-alpine
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
+FROM ubuntu:18.04
 
-RUN apk update && apk upgrade
-RUN apk add --no-cache bash \
-                       pkgconfig \
-                       git \
-                       gcc \
-                       openldap \
-                       libcurl \
-                       gpgme-dev \
-                       libc-dev \
-    && rm -rf /var/cache/apk/*
-
-# add poetry
-RUN pip install poetry
+RUN apt-get update -y && \
+    apt-get install -y python3.7 python3-pip python3.7-dev
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir numpy poetry scrapy
 
 # add app
 WORKDIR /app
