@@ -18,7 +18,7 @@ RUN apt-get install software-properties-common -y && \
     apt-get update
 
 RUN apt-get update -y && \
-    apt-get install -y python3.10 python-pip
+    apt-get install -y python3.10 python3-pip
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir numpy poetry scrapy
