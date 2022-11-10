@@ -1,5 +1,5 @@
 # docker for scrapy
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list && \
     sed -i s@/security.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list && \
@@ -20,8 +20,8 @@ RUN apt-get install software-properties-common -y && \
 RUN apt-get update -y && \
     apt-get install -y python3.10 python3-pip
 
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir numpy poetry scrapy
+RUN pip3 install --upgrade pip
+RUN pip3 install --no-cache-dir numpy poetry scrapy
 
 # add app
 WORKDIR /app
