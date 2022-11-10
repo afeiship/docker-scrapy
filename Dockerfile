@@ -6,6 +6,13 @@ RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list &
     apt-get clean && \
     apt-get update
 
+ENV TZ=Asia/ShangHai \
+    DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && \
+    apt-get install tzdata
+
+
 RUN apt-get install software-properties-common -y && \
     add-apt-repository ppa:deadsnakes/ppa && \
     apt-get update
